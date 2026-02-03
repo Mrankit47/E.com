@@ -1,0 +1,432 @@
+body{
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(255, 246, 246);
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  background-color: white;
+  box-shadow: 0px 4px 4px 0px rgb(181, 181, 181);
+  
+}
+.navbar{
+  position: sticky;
+  top: 0;
+  z-index: 1;
+}
+nav ul a {
+  text-decoration: none;
+  margin-inline: 25px;
+  font-size: 18px;
+  color: black;
+}
+nav ul a:hover{
+  color: blueviolet;
+  border-bottom: 2px solid blueviolet;
+}
+nav button {
+  width: 70px;
+  height: 29px;
+  background-color: red;
+  color: white;
+  font-size: 18px;
+  border: none;
+  border-radius: 10px;
+}
+nav button:hover {
+  border: 2px solid red;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+nav ul {
+  margin-right: 30px;
+  margin-top: 22px;
+}
+nav .logo {
+  margin-left: 30px;
+}
+nav img {
+  width: 30px;
+}
+.main {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 115px;
+}
+
+.mainText {
+  margin-top: 33px;
+}
+.mainText h1 {
+  font-size: 4rem;
+}
+.mainText h2 {
+  font-size: 2.5rem;
+  color: blueviolet;
+}
+.main img {
+  width: 30rem;
+}
+.mainText button {
+  width: 9rem;
+  height: 3rem;
+  background-color: red;
+  color: white;
+  border: none;
+  font-size: 1.2rem;
+  border-radius: 10px;
+}
+.mainText button:hover {
+  border: 3px solid red;
+  background-color: transparent;
+  color: black;
+  cursor: pointer;
+}
+.head h1{
+  font-size: 2rem;
+}
+.head {
+  text-align: center;
+  margin-top: 3rem;
+  padding: 3.5rem;
+}
+.head span {
+  color: blueviolet;
+}
+.card {
+  display: flex;
+  justify-content: center;
+  
+}
+.card .trend {
+  width: 17rem;
+  background-color: #fff;
+  margin-inline: 1.5rem;
+  border-radius: 10px  ;
+}
+.trend{
+  
+    height:33rem ;
+    overflow: hidden;
+}
+.trend img {
+  width: 100%;
+  height: 60%;
+  transition: 0.4s all ease-in-out;
+  
+}
+.trend .cardText {
+  padding: 0.8rem;
+}
+.trend i {
+  color: rgb(255, 196, 0);
+  font-size: 1.5rem;
+}
+.trend button {
+  width: 5rem;
+  height: 2.3rem;
+  background-color: red;
+  font-size: 0.8rem;
+  border-radius: 1.5rem;
+  border: none;
+  margin-left: 2rem;
+  color: white;
+}
+.trend img:hover {
+  transform: scale(1.2);
+  cursor: pointer;
+  z-index: 0;
+  
+  
+}
+.blog {
+  display: flex;
+  justify-content: center;
+  
+}
+.blogText h2{
+  color: black;
+}
+.blogCard {
+  display: flex;
+  background-color: white;
+  padding: 0.8rem;
+  margin-inline: 1.5rem;
+  width: 32rem;
+}
+.blogCard:hover {
+  width: 35rem;
+  transition: 0.7s ease;
+  background-color: rgb(179, 134, 221);
+  border-radius: 10px;
+  p{
+    color: white;
+  }
+  h2{
+    color: white;
+  }
+  
+}
+.blogCard img {
+  width: 50%;
+  border-radius: 0.8rem;
+}
+.blogCard .blogText {
+  text-align: center;
+  padding: 1.3rem;
+}
+.blogText a {
+  width: 5.7rem;
+  padding: 0.6rem;
+  background-color: red;
+  color: white;
+  font-size: 1.2rem;
+  border: none;
+  text-decoration: none;
+  border-radius: 5px;
+}
+.customer {
+  display: flex;
+  justify-content: center;
+}
+.customer .review {
+  width: 280px;
+  background-color: white;
+  margin-inline: 3rem;
+}
+.review h1{
+  padding-bottom: 3rem;
+}
+.review img {
+  width: 44%;
+  border-radius: 50%;
+  
+}
+
+.review i{
+  color: rgb(255, 187, 0);
+  padding-bottom: 1rem;
+}
+.contactPage{
+  max-width: 35vw;
+  height: 20vh;
+  padding: 2.5rem;
+  border: 0.3rem solid blueviolet;
+  text-align: center;
+  margin-left: 29.25%;
+}
+.contactPage input{
+  max-width: 20rem;
+  padding: 6px;
+  margin: 0.6rem;
+  font-size: 1rem;
+  outline: none;
+}
+.contactPage button{
+  width: 9rem;
+  height: 2.4rem;
+  background-color: blueviolet;
+  color: white;
+  margin-top: 1rem;
+  font-size: 1.1rem;
+}
+.contactPage button:hover{
+  border: 3px solid blueviolet;
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+.footer{
+display: flex;
+justify-content: space-around;
+background-color:rgb(133, 100, 164);
+color: black;
+padding: 0.5rem;
+margin: 0.1rem;
+margin-top: 15rem;
+}
+.text{
+  padding: 4rem;
+}
+.footer h2{
+  color: black;
+}
+
+
+/* login */
+.loginpage{
+  display: none;
+  width: 12rem;
+  padding: 1.5rem;
+  background-color: white;
+  text-align: center;
+  position: absolute;
+  margin-left: 86%;
+  top: 10%;
+}
+.loginpage input{
+  width: 10.2rem;
+  padding: 0.25rem;
+  border: 2px solid blueviolet;
+  margin-top: 0.8rem;
+
+}
+.loginpage button{
+  margin-top: 0.9rem;
+  width: 5rem;
+  height: 1.8rem;
+  border: none;
+  font-size: 1rem;
+  background-color: blueviolet;
+  color: white;
+  border-radius: 5px;
+}
+.container{
+  padding: 2rem;
+
+}
+
+/* Cart sidebar */
+.cart-sidebar{
+  position: fixed;
+  right: -420px;
+  top: 0;
+  width: 380px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+  transition: right 0.3s ease;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+}
+.cart-sidebar.open{ right: 0; }
+.cart-header{ display:flex; justify-content:space-between; align-items:center; padding:1rem; border-bottom:1px solid #eee }
+.cart-items{ padding:1rem; overflow:auto; flex:1 }
+.cart-item{ display:flex; gap:0.6rem; align-items:center; margin-bottom:0.8rem }
+.cart-item img{ width:60px; height:60px; object-fit:cover; border-radius:6px }
+.cart-item .meta{ flex:1 }
+.cart-item .meta h4{ margin:0; font-size:0.95rem }
+.cart-item .meta p{ margin:0.25rem 0; color: #666 }
+.cart-item .remove{ background:transparent; border:none; color:#c0392b; cursor:pointer }
+.cart-footer{ padding:1rem; border-top:1px solid #eee }
+.checkout{ width:100%; padding:0.8rem; background:blueviolet; color:#fff; border:none; border-radius:6px; cursor:pointer }
+
+/* Payment modal */
+.payment-modal{ position:fixed; inset:0; display:none; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:10000 }
+.payment-modal.open{ display:flex }
+.payment-card{ background:#fff; padding:1.2rem; width:320px; border-radius:8px }
+.payment-card h3{ margin-top:0 }
+.payment-methods label{ display:block; margin:0.4rem 0 }
+.payment-card input{ width:100%; padding:0.5rem; margin:0.4rem 0; box-sizing:border-box }
+.payment-actions{ display:flex; gap:0.6rem; justify-content:flex-end }
+.payment-actions button{ padding:0.5rem 0.8rem; border-radius:6px; border:none }
+.payment-actions #payCancel{ background:#eee }
+.payment-actions #payNow{ background:blueviolet; color:#fff }
+
+
+
+/* responsiveness */
+/* For mobile devices (max-width: 768px) */
+@media (max-width: 768px) {
+  /* Adjust navigation */
+  nav {
+    flex-direction: column;
+    align-items: center;
+  }
+  nav ul {
+    margin-right: 0;
+    margin-top: 10px;
+  }
+  nav button {
+    margin-top: 10px;
+  }
+
+  /* Adjust main content */
+  .main {
+    flex-direction: column;
+    align-items: center;
+    margin-top: 80px;
+  }
+  .main img {
+    width: 100%;
+    max-width: 20rem;
+  }
+
+  /* Adjust cards and blog cards */
+  .card {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card .trend {
+    margin-inline: 0;
+    margin-bottom: 20px;
+  }
+  .blogCard {
+    margin-inline: 0;
+    margin-bottom: 20px;
+  }
+
+  /* Adjust contact form */
+  .contactPage {
+    max-width: 80vw;
+    margin-left: 10vw;
+  }
+
+  /* Adjust footer */
+  .footer {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* For tablets (max-width: 1024px) */
+@media (max-width: 1024px) {
+  /* Adjust main content */
+  .main {
+    margin-top: 90px;
+  }
+  .main img {
+    width: 100%;
+    max-width: 25rem;
+  }
+
+  /* Adjust cards and blog cards */
+  .card {
+    flex-direction: row;
+  }
+  .card .trend {
+    margin-inline: 1rem;
+  }
+  .blogCard {
+    margin-inline: 1rem;
+  }
+
+  /* Adjust contact form */
+  .contactPage {
+    max-width: 60vw;
+    margin-left: 20vw;
+  }
+}
+
+/* For smaller desktops (max-width: 1280px) */
+@media (max-width: 1280px) {
+  /* Adjust main content */
+  .main {
+    margin-top: 100px;
+  }
+  .main img {
+    width: 100%;
+    max-width: 28rem;
+  }
+
+  /* Adjust contact form */
+  .contactPage {
+    max-width: 50vw;
+    margin-left: 25vw;
+  }
+}
+
