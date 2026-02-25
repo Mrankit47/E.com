@@ -1,20 +1,33 @@
-body{
+body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
   background-color: rgb(255, 246, 246);
 }
+
+/* Navbar */
 nav {
   display: flex;
   justify-content: space-between;
   background-color: white;
   box-shadow: 0px 4px 4px 0px rgb(181, 181, 181);
-  
 }
-.navbar{
+.navbar {
   position: sticky;
   top: 0;
   z-index: 1;
+}
+nav ul {
+  margin-right: 30px;
+  margin-top: 22px;
+  list-style: none;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+}
+nav ul li {
+  display: inline-block;
 }
 nav ul a {
   text-decoration: none;
@@ -22,7 +35,7 @@ nav ul a {
   font-size: 18px;
   color: black;
 }
-nav ul a:hover{
+nav ul a:hover {
   color: blueviolet;
   border-bottom: 2px solid blueviolet;
 }
@@ -31,9 +44,11 @@ nav button {
   height: 29px;
   background-color: red;
   color: white;
-  font-size: 18px;
+  font-size: 15px;
   border: none;
   border-radius: 10px;
+  cursor: pointer;
+  margin-inline: 4px;
 }
 nav button:hover {
   border: 2px solid red;
@@ -41,22 +56,19 @@ nav button:hover {
   color: black;
   cursor: pointer;
 }
-nav ul {
-  margin-right: 30px;
-  margin-top: 22px;
-}
 nav .logo {
   margin-left: 30px;
 }
 nav img {
   width: 30px;
 }
+
+/* Main Hero */
 .main {
   display: flex;
   justify-content: space-around;
   margin-top: 115px;
 }
-
 .mainText {
   margin-top: 33px;
 }
@@ -78,6 +90,7 @@ nav img {
   border: none;
   font-size: 1.2rem;
   border-radius: 10px;
+  cursor: pointer;
 }
 .mainText button:hover {
   border: 3px solid red;
@@ -85,7 +98,9 @@ nav img {
   color: black;
   cursor: pointer;
 }
-.head h1{
+
+/* Section Headings */
+.head h1 {
   font-size: 2rem;
 }
 .head {
@@ -96,27 +111,27 @@ nav img {
 .head span {
   color: blueviolet;
 }
+
+/* Product Cards */
 .card {
   display: flex;
   justify-content: center;
-  
+  flex-wrap: wrap;
 }
 .card .trend {
   width: 17rem;
   background-color: #fff;
   margin-inline: 1.5rem;
-  border-radius: 10px  ;
+  border-radius: 10px;
 }
-.trend{
-  
-    height:33rem ;
-    overflow: hidden;
+.trend {
+  height: 33rem;
+  overflow: hidden;
 }
 .trend img {
   width: 100%;
   height: 60%;
   transition: 0.4s all ease-in-out;
-  
 }
 .trend .cardText {
   padding: 0.8rem;
@@ -134,20 +149,21 @@ nav img {
   border: none;
   margin-left: 2rem;
   color: white;
+  cursor: pointer;
 }
 .trend img:hover {
   transform: scale(1.2);
   cursor: pointer;
   z-index: 0;
-  
-  
 }
+
+/* Blog */
 .blog {
   display: flex;
   justify-content: center;
-  
+  flex-wrap: wrap;
 }
-.blogText h2{
+.blogText h2 {
   color: black;
 }
 .blogCard {
@@ -156,19 +172,20 @@ nav img {
   padding: 0.8rem;
   margin-inline: 1.5rem;
   width: 32rem;
+  transition: 0.7s ease;
+  border-radius: 10px;
+  margin-bottom: 1rem;
 }
 .blogCard:hover {
   width: 35rem;
-  transition: 0.7s ease;
   background-color: rgb(179, 134, 221);
   border-radius: 10px;
-  p{
-    color: white;
-  }
-  h2{
-    color: white;
-  }
-  
+}
+.blogCard:hover .blogText p {
+  color: white;
+}
+.blogCard:hover .blogText h2 {
+  color: white;
 }
 .blogCard img {
   width: 50%;
@@ -188,29 +205,37 @@ nav img {
   text-decoration: none;
   border-radius: 5px;
 }
+
+/* Reviews */
 .customer {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
 }
-.customer .review {
+.customer .reviewCard {
   width: 280px;
   background-color: white;
   margin-inline: 3rem;
+  padding: 1rem;
+  border-radius: 8px;
+  text-align: center;
+  margin-bottom: 1rem;
 }
-.review h1{
+.reviewSection .head h1 {
   padding-bottom: 3rem;
 }
-.review img {
+.customer .reviewCard img {
   width: 44%;
   border-radius: 50%;
-  
 }
-
-.review i{
+.customer .reviewCard i {
   color: rgb(255, 187, 0);
   padding-bottom: 1rem;
+  font-size: 1.2rem;
 }
-.contactPage{
+
+/* Contact */
+.contactPage {
   max-width: 35vw;
   height: 20vh;
   padding: 2.5rem;
@@ -218,46 +243,50 @@ nav img {
   text-align: center;
   margin-left: 29.25%;
 }
-.contactPage input{
+.contactPage input {
   max-width: 20rem;
   padding: 6px;
   margin: 0.6rem;
   font-size: 1rem;
   outline: none;
 }
-.contactPage button{
+.contactPage button {
   width: 9rem;
   height: 2.4rem;
   background-color: blueviolet;
   color: white;
   margin-top: 1rem;
   font-size: 1.1rem;
+  border: none;
+  cursor: pointer;
 }
-.contactPage button:hover{
+.contactPage button:hover {
   border: 3px solid blueviolet;
   background-color: white;
   color: black;
   cursor: pointer;
 }
-.footer{
-display: flex;
-justify-content: space-around;
-background-color:rgb(133, 100, 164);
-color: black;
-padding: 0.5rem;
-margin: 0.1rem;
-margin-top: 15rem;
+
+/* Footer */
+.footer {
+  display: flex;
+  justify-content: space-around;
+  background-color: rgb(133, 100, 164);
+  color: black;
+  padding: 0.5rem;
+  margin: 0.1rem;
+  margin-top: 15rem;
+  flex-wrap: wrap;
 }
-.text{
+.text {
   padding: 4rem;
 }
-.footer h2{
+.footer h2 {
   color: black;
 }
 
-
-/* login */
-.loginpage{
+/* Login Popup */
+.loginpage {
   display: none;
   width: 12rem;
   padding: 1.5rem;
@@ -266,15 +295,17 @@ margin-top: 15rem;
   position: absolute;
   margin-left: 86%;
   top: 10%;
+  z-index: 100;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+  border-radius: 8px;
 }
-.loginpage input{
+.loginpage input {
   width: 10.2rem;
   padding: 0.25rem;
   border: 2px solid blueviolet;
   margin-top: 0.8rem;
-
 }
-.loginpage button{
+.loginpage button {
   margin-top: 0.9rem;
   width: 5rem;
   height: 1.8rem;
@@ -283,56 +314,144 @@ margin-top: 15rem;
   background-color: blueviolet;
   color: white;
   border-radius: 5px;
+  cursor: pointer;
 }
-.container{
+
+.container {
   padding: 2rem;
-
 }
 
-/* Cart sidebar */
-.cart-sidebar{
+/* Cart Sidebar */
+.cart-sidebar {
   position: fixed;
   right: -420px;
   top: 0;
   width: 380px;
   height: 100%;
   background: #fff;
-  box-shadow: -4px 0 12px rgba(0,0,0,0.15);
+  box-shadow: -4px 0 12px rgba(0, 0, 0, 0.15);
   transition: right 0.3s ease;
   z-index: 9999;
   display: flex;
   flex-direction: column;
 }
-.cart-sidebar.open{ right: 0; }
-.cart-header{ display:flex; justify-content:space-between; align-items:center; padding:1rem; border-bottom:1px solid #eee }
-.cart-items{ padding:1rem; overflow:auto; flex:1 }
-.cart-item{ display:flex; gap:0.6rem; align-items:center; margin-bottom:0.8rem }
-.cart-item img{ width:60px; height:60px; object-fit:cover; border-radius:6px }
-.cart-item .meta{ flex:1 }
-.cart-item .meta h4{ margin:0; font-size:0.95rem }
-.cart-item .meta p{ margin:0.25rem 0; color: #666 }
-.cart-item .remove{ background:transparent; border:none; color:#c0392b; cursor:pointer }
-.cart-footer{ padding:1rem; border-top:1px solid #eee }
-.checkout{ width:100%; padding:0.8rem; background:blueviolet; color:#fff; border:none; border-radius:6px; cursor:pointer }
+.cart-sidebar.open {
+  right: 0;
+}
+.cart-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  border-bottom: 1px solid #eee;
+}
+.cart-items {
+  padding: 1rem;
+  overflow: auto;
+  flex: 1;
+}
+.cart-item {
+  display: flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+.cart-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.cart-item .meta {
+  flex: 1;
+}
+.cart-item .meta h4 {
+  margin: 0;
+  font-size: 0.95rem;
+}
+.cart-item .meta p {
+  margin: 0.25rem 0;
+  color: #666;
+}
+.cart-item .remove {
+  background: transparent;
+  border: none;
+  color: #c0392b;
+  cursor: pointer;
+}
+.cart-footer {
+  padding: 1rem;
+  border-top: 1px solid #eee;
+}
+.cart-total {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.8rem;
+}
+.checkout {
+  width: 100%;
+  padding: 0.8rem;
+  background: blueviolet;
+  color: #fff;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 1rem;
+}
 
-/* Payment modal */
-.payment-modal{ position:fixed; inset:0; display:none; background:rgba(0,0,0,0.5); align-items:center; justify-content:center; z-index:10000 }
-.payment-modal.open{ display:flex }
-.payment-card{ background:#fff; padding:1.2rem; width:320px; border-radius:8px }
-.payment-card h3{ margin-top:0 }
-.payment-methods label{ display:block; margin:0.4rem 0 }
-.payment-card input{ width:100%; padding:0.5rem; margin:0.4rem 0; box-sizing:border-box }
-.payment-actions{ display:flex; gap:0.6rem; justify-content:flex-end }
-.payment-actions button{ padding:0.5rem 0.8rem; border-radius:6px; border:none }
-.payment-actions #payCancel{ background:#eee }
-.payment-actions #payNow{ background:blueviolet; color:#fff }
+/* Payment Modal */
+.payment-modal {
+  position: fixed;
+  inset: 0;
+  display: none;
+  background: rgba(0, 0, 0, 0.5);
+  align-items: center;
+  justify-content: center;
+  z-index: 10000;
+}
+.payment-modal.open {
+  display: flex;
+}
+.payment-card {
+  background: #fff;
+  padding: 1.2rem;
+  width: 320px;
+  border-radius: 8px;
+}
+.payment-card h3 {
+  margin-top: 0;
+}
+.payment-methods label {
+  display: block;
+  margin: 0.4rem 0;
+}
+.payment-card input {
+  width: 100%;
+  padding: 0.5rem;
+  margin: 0.4rem 0;
+  box-sizing: border-box;
+}
+.payment-actions {
+  display: flex;
+  gap: 0.6rem;
+  justify-content: flex-end;
+}
+.payment-actions button {
+  padding: 0.5rem 0.8rem;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+.payment-actions #payCancel {
+  background: #eee;
+}
+.payment-actions #payNow {
+  background: blueviolet;
+  color: #fff;
+}
 
-
-
-/* responsiveness */
-/* For mobile devices (max-width: 768px) */
+/* Responsiveness */
 @media (max-width: 768px) {
-  /* Adjust navigation */
   nav {
     flex-direction: column;
     align-items: center;
@@ -340,12 +459,11 @@ margin-top: 15rem;
   nav ul {
     margin-right: 0;
     margin-top: 10px;
+    justify-content: center;
   }
   nav button {
     margin-top: 10px;
   }
-
-  /* Adjust main content */
   .main {
     flex-direction: column;
     align-items: center;
@@ -355,8 +473,12 @@ margin-top: 15rem;
     width: 100%;
     max-width: 20rem;
   }
-
-  /* Adjust cards and blog cards */
+  .mainText h1 {
+    font-size: 2rem;
+  }
+  .mainText h2 {
+    font-size: 1.5rem;
+  }
   .card {
     flex-direction: column;
     align-items: center;
@@ -365,27 +487,34 @@ margin-top: 15rem;
     margin-inline: 0;
     margin-bottom: 20px;
   }
+  .blog {
+    flex-direction: column;
+    align-items: center;
+  }
   .blogCard {
     margin-inline: 0;
     margin-bottom: 20px;
+    width: 90vw;
   }
-
-  /* Adjust contact form */
+  .blogCard:hover {
+    width: 90vw;
+  }
   .contactPage {
     max-width: 80vw;
     margin-left: 10vw;
+    height: auto;
   }
-
-  /* Adjust footer */
   .footer {
     flex-direction: column;
     align-items: center;
   }
+  .loginpage {
+    margin-left: 50%;
+    transform: translateX(-50%);
+  }
 }
 
-/* For tablets (max-width: 1024px) */
 @media (max-width: 1024px) {
-  /* Adjust main content */
   .main {
     margin-top: 90px;
   }
@@ -393,10 +522,8 @@ margin-top: 15rem;
     width: 100%;
     max-width: 25rem;
   }
-
-  /* Adjust cards and blog cards */
   .card {
-    flex-direction: row;
+    flex-wrap: wrap;
   }
   .card .trend {
     margin-inline: 1rem;
@@ -404,17 +531,14 @@ margin-top: 15rem;
   .blogCard {
     margin-inline: 1rem;
   }
-
-  /* Adjust contact form */
   .contactPage {
     max-width: 60vw;
     margin-left: 20vw;
+    height: auto;
   }
 }
 
-/* For smaller desktops (max-width: 1280px) */
 @media (max-width: 1280px) {
-  /* Adjust main content */
   .main {
     margin-top: 100px;
   }
@@ -422,11 +546,8 @@ margin-top: 15rem;
     width: 100%;
     max-width: 28rem;
   }
-
-  /* Adjust contact form */
   .contactPage {
     max-width: 50vw;
     margin-left: 25vw;
   }
 }
-
